@@ -1,3 +1,7 @@
+
+/*Para mantener un mejor orden en los estilos y poder realizar un cambio de forma más ràpida,
+utilicé variables*/
+
 :root {
     --color-red: #BD350F;
     --color-yellow: #FFAB24;
@@ -19,11 +23,15 @@
 }
 
 
+/*Aplique los estilos que más se repiten a la etiqueta HTML para ahorrar algunas lineas d ecodigo*/
+
 html{
     font-family: var(--font-main);
     font-size: 16px;
     scroll-behavior: smooth;
 }
+
+/*Le apliqué margin y padding 0 al body para eliminar los espacios en blanco que se tienen por defecto*/
 
 body{
     background-color: var(--color-background);
@@ -31,7 +39,7 @@ body{
     padding: 0;
 }
 
-
+/*Inicia estilos de barra de navegación superior*/
 
 .topbar {
     background-color: var(--color-yellow);
@@ -81,6 +89,10 @@ body{
     color: var(--color-red-logo);
 }
 
+/*Teminan estilos de barra de navegación superior*/
+
+/*Inician estilos de la portada*/
+
 .cover{
     height: 100vh;
     display: grid;
@@ -99,42 +111,37 @@ body{
     background-position: 50% 50%;
 }
 
-.cover1 {
+.cover1, .cover2, .cover3, .cover4 {
     height: 50vh;
-    grid-area: cover1;
-    background-image: url('./assets/cover1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.cover1 {
+    grid-area: cover1;
+    background-image: url('./assets/cover1.jpg');
 }
 
 .cover2 {
-    height: 50vh;
     grid-area: cover2;
     background-image: url('./assets/cover2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 .cover3 {
-    height: 50vh;
     background-image: url('./assets/cover3.jpg');
     grid-area: cover3;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 .cover4 {
-    height: 50vh;
     background-image: url('./assets/cover4.jpg');
     grid-area: cover4;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
+/*Terminan estilos de portada*/
+
+
+/*Inican estilos de sección de promociones*/
 
 .promos{
     margin-top: 7rem;
@@ -146,6 +153,8 @@ section > h2 {
     margin-left: 3rem;
     font-size: 2.5rem;
 }
+
+        /* **********Inician estilos de slider **************** */
 
 .slider {
     display: flex;
@@ -271,7 +280,13 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 }
 
 
-.tacos, .drinks, .desserts, .combos, .gallery, .menu{
+/*Terminan estilos de slider y sección de promociones*/
+
+
+
+
+
+.tacos, .drinks, .desserts, .combos, .gallery, .menu{ /*Estilos que se aplicarán para cada una des las sección, espacialmente en cuanto al espaciado*/
     margin-top: 7rem;
     max-width: var(--max-width);
     margin-left: auto;
@@ -279,6 +294,8 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 }
 
 
+
+/*Estilos del menú*/
 
 .menu h1{
     text-align: center;
@@ -301,7 +318,11 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     font-size: 2.2rem;
 }
 
+/*Terminan estilos del Menù*/
 
+
+
+/*Inician estilos de las tarjetas que se usarán para presentar cada uno de los productos*/
 .cards {
     padding: 0 3rem;
     display: flex;
@@ -345,8 +366,15 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     font-size: 2.2rem;
 }
 
+
+/*Terminan estilos de tarjetas de procutos*/
+
+
+/*Inician estilos para la galería*/
+
+
 .photos {
-    display: grid;
+    display: grid;  /*Se uso grid para darle el aspexcto de cuadricula*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 20rem;
     column-gap: 1rem;
@@ -399,6 +427,9 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     background-size: cover;
 }
 
+/*Teerminan estilos de la galería*/
+
+/*Inician estilos de footer*/
 
 footer{
     margin-top: 5rem;
@@ -427,3 +458,5 @@ footer * {
 footer a {
     color: var(--color-red)
 }
+
+/*Termiann estilos de footer*/
