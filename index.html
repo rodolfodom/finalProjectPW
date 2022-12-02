@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Zilla+Slab:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MEXICAN</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <nav>
+            <a href="#" class="logo">MEXICAN</a>
+            <div class="topbar-links">
+                <a href="#promos" class="topbar-link">Promociones</a>
+                <a href="#menu" class="topbar-link">Menú</a>
+                <a href="#gallery" class="topbar-link">Galería</a>
+            </div>
+        </nav>
+    </div>
+    <section class="cover">
+        <div class="cover1"></div>
+        <div class="cover2"></div>
+        <div class="cover-logo"></div>
+        <div class="cover3"></div>
+        <div class="cover4"></div>
+    </section>
+
+
+    <section class="promos" id="promos">
+        <h2>Promociones</h2>
+        <div class="slider">
+            <div class="slider-container">
+                <input type="radio" id="1" class="image-slide" hidden>
+                <input type="radio" id="2" class="image-slide" hidden>
+                <input type="radio" id="3" class="image-slide" hidden>
+                <div class="slides">
+                    <div class="item-slide">
+                        <img src="./assets/promo4.png" alt="">
+                    </div>
+                    <div class="item-slide">
+                        <img src="./assets/promo5.png" alt="">
+                    </div>
+                    <div class="item-slide">
+                        <img src="./assets/promo6.png" alt="">
+                    </div>
+                </div>
+                <div class="pagination">
+                    <label for="1" class="pagination-item">
+                        <img src="./assets/promo4.png" alt="">
+                    </label>
+                    <label for="2" class="pagination-item">
+                        <img src="./assets/promo5.png" alt="">
+                    </label>
+                    <label for="3" class="pagination-item">
+                        <img src="./assets/promo6.png" alt="">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h1>Menú</h1>
+        <div>
+            <a href="#tacos">Tacos</a>
+            <a href="#drinks">Bebidas</a>
+            <a href="#desserts">Postres</a>
+            <a href="#combos">Paquetes</a>
+        </div>
+    </section>
+
+
+
+    <section class="tacos" id="tacos">
+        <h2>Tacos</h2>
+        <div class="cards">
+            <figure class="card">
+                <img src="./assets/taco1.png" alt="taco">
+                <figcaption>Tacos al pastor<br />
+                </figcaption>
+                <small class="description">Orden de 5 tacos</small><br>
+                <span class="cost">$50</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/taco2.png" alt="taco">
+                <figcaption>Tacos de arrachera
+                </figcaption>
+                <small class="description">Orden de 5 tacos</small><br>
+                <span class="cost">$70</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/taco3.png" alt="taco">
+                <figcaption>Tacos de barbacoa</figcaption>
+                <small class="description">Orden de 5 tacos</small><br>
+                <span class="cost">$60</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/taco4.png" alt="taco">
+                <figcaption>Tacos de suadero</figcaption>
+                <small class="description">Orden de 5 tacos</small><br>
+                <span class="cost">$50</span>
+            </figure>
+        </div>
+    </section>
+    <section class="drinks" id="drinks">
+        <h2>Bebidas</h2>
+        <div class="cards">
+            <figure class="card">
+                <img src="./assets/bebida1.png" alt="Refresco de cola">
+                <figcaption>Refresco de cola</figcaption>
+                <small class="description">600ml</small><br>
+                <span class="cost">$25</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/bebida2.png" alt="cerveza">
+                <figcaption>Cerveza</figcaption>
+                <small class="description">1000 ml</small><br>
+                <span class="cost">$60</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/bebida3.png" alt="jugo de naranja">
+                <figcaption>Jugo de naranja</figcaption>
+                <small class="description">Orden de 5 tacos</small><br>
+                <span class="cost">$25</span>
+            </figure>
+        </div>
+    </section>
+
+    <section class="desserts" id="desserts">
+        <h2>Postres</h2>
+        <div class="cards">
+            <figure class="card">
+                <img src="./assets/postre1.jpg" alt="cupcake">
+                <figcaption>Cupcake</figcaption>
+                <small class="description">Frutos tropicales</small><br>
+                <span class="cost">$25</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/postre2.jpg" alt="pay de queso">
+                <figcaption>Pay de queso</figcaption>
+                <small class="description">Con mermelada de fresa</small><br>
+                <span class="cost">$30</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/postre3.jpg" alt="Helado">
+                <figcaption>Cono de helado</figcaption>
+                <small class="description">Vainilla, Fresa o Chocolate</small><br>
+                <span class="cost">$25</span>
+            </figure>
+        </div>
+    </section>
+
+    <section class="combos" id="combos">
+        <h2>Paquetes</h2>
+        <div class="cards">
+            <figure class="card">
+                <img src="./assets/paquete1.png" alt="paquete con todo">
+                <figcaption>Paquete con todo</figcaption>
+                <small class="description">Orden de 5 tacos de cualquier especialidad y un refresco de
+                    600ml</small><br>
+                <span class="cost">$100</span>
+            </figure>
+
+            <figure class="card">
+                <img src="./assets/paquete2.jpg" alt="paquete campechano">
+                <figcaption>Paquete campechano</figcaption>
+                <small class="description">Orden de 5 tacos de cualquier especialidad (puede mezclar) y una
+                    bebida</small><br>
+                <span class="cost">$30</span>
+            </figure>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Galería</h2>
+        <div class="photos">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </section>
+    <footer>
+        <img src="./assets/logo.png" alt="mexican logo">
+
+        <address>
+            Benito Juarez 21, Coyoacan, Ciudad de México, México <br>
+            <a href="tel:5555555555">5555555555</a> <br>
+            <a href="mailto:mexican@food.com">mexican@food.com</a>
+        </address>
+
+        <p>
+            Alumno: Rodolfo Domínguez Ríos <br>
+            Asignatura: Programación web <br>
+            grupo: 1507
+        </p>
+    </footer>
+</body>
+
+</html>
